@@ -1,6 +1,9 @@
+// 나누어 떨어지는 숫자 배열
+// https://school.programmers.co.kr/learn/courses/30/lessons/12910
 
-// import java.util.ArrayList;
+//import java.util.ArrayList;
 //import java.util.Collections;
+
 import java.util.Arrays;
 
 public class A02 {
@@ -26,7 +29,7 @@ public class A02 {
                 .sorted().toArray();
 
         if (ans.length == 0)
-            return new int[] { -1 };
+            return new int[]{-1};
 
         return ans;
     }

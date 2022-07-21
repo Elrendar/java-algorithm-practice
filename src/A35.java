@@ -1,3 +1,4 @@
+// 비밀지도
 // https://school.programmers.co.kr/learn/courses/30/lessons/17681
 
 import java.util.ArrayList;
@@ -10,6 +11,7 @@ public class A35 {
         var temp = new StringBuilder();
         for (int i = 0; i < n; i++) {
             temp.append(Integer.toBinaryString(arr1[i] | arr2[i]));
+            
             while (temp.length() < n) {
                 temp.insert(0, "0");
             }
