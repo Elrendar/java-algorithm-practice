@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.StringJoiner;
 
 public class Test {
     // int[] checkIn = { 9, 7, 8, 9, 7, 9, 8 };
@@ -17,7 +19,7 @@ public class Test {
 
     public String solution(int month, int day) {
         String answer = "";
-        int[] daysOfMonths = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+        int[] daysOfMonths = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
         int daysLeftThisMonth = daysOfMonths[month - 1] - day;
         int daysLeftFromNextMonth = 98 - daysLeftThisMonth;
@@ -34,5 +36,19 @@ public class Test {
         System.out.println("" + thisMonth + "월 " + daysLeftFromNextMonth + "일");
 
         return answer;
+    }
+
+    public String solution(int n) {
+        var sb = new StringBuilder(String.valueOf(n)).reverse();
+        var sj = new StringJoiner("+");
+        var list = new ArrayList<String>();
+
+        int sum = 0;
+        for (int i = 0; i < sb.length(); i++) {
+            sj.add((String.valueOf(sb.charAt(i))));
+            sum += Integer.parseInt(String.valueOf(sb.charAt(i)));
+        }
+
+        return sj.toString() + "=" + sum;
     }
 }
