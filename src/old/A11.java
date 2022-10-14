@@ -1,4 +1,4 @@
-// 콜라츠 추측
+package old;// 콜라츠 추측
 // https://school.programmers.co.kr/learn/courses/30/lessons/12943
 
 public class A11 {

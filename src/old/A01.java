@@ -1,4 +1,4 @@
-// 2016년
+package old;// 2016년
 // https://school.programmers.co.kr/learn/courses/30/lessons/12901
 
 public class A01 {
